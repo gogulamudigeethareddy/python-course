@@ -1,9 +1,15 @@
 ###Sitka Rainfall
 # 
+import os
 # import csv
 # from datetime import datetime
 # import matplotlib.pyplot as plt
 # 
+directory = 'downloading_data'
+subdirectory = 'data'
+
+file_path = os.path.join(directory, subdirectory)
+
 # filename = 'data/sitka_weather_2018_simple.csv'
 # with open(filename) as f:
     # reader = csv.reader(f)
@@ -70,8 +76,8 @@ from datetime import datetime
 
 import matplotlib.pyplot as plt
 
-filename1 = 'data/death_valley_2018_simple.csv'      
-filename2 = 'data/sitka_weather_2018_simple.csv'
+filename1 = f"{file_path}/death_valley_2018_simple.csv"
+filename2 = f"{file_path}/sitka_weather_2018_simple.csv"
 
 with open(filename1) as f1:
     reader_1 = csv.reader(f1)

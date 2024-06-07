@@ -1,30 +1,30 @@
-###CSV file headers
-# 
-# import csv
-# 
-# filename = 'data/sitka_weather_07-2018_simple.csv'
-# with open(filename) as f:
-    # reader = csv.reader(f)
-    # header_row = next(reader)
-    # print(header_row)
-# 
+##CSV file headers
+
+import csv
+
+filename = 'downloading_data/data/sitka_weather_07-2018_simple.csv'
+with open(filename) as f:
+    reader = csv.reader(f)
+    header_row = next(reader)
+    print(header_row)
+
 ###Printing the headers and their positions
 
-# import csv
+import csv
 
-# filename = 'data/sitka_weather_07-2018_simple.csv'
-# with open(filename) as f:
-    # reader = csv.reader(f)
-    # header_row = next(reader)
+filename = 'downloading_data/data/sitka_weather_07-2018_simple.csv'
+with open(filename) as f:
+    reader = csv.reader(f)
+    header_row = next(reader)
 
-    # for index, column_header in enumerate(header_row):
-        # print(index, column_header)
+    for index, column_header in enumerate(header_row):
+        print(index, column_header)
 
 ###Extracting and Reading the data
 # 
 # import csv
 
-# filename = 'data/sitka_weather_07-2018_simple.csv'
+# filename = 'downloading_data/data/sitka_weather_07-2018_simple.csv'
 # with open(filename) as f:
     # reader = csv.reader(f)
     # header_row = next(reader)
@@ -42,7 +42,7 @@
 # 
 # import matplotlib.pyplot as plt
 # 
-# filename = 'data/sitka_weather_07-2018_simple.csv'
+# filename = 'downloading_data/data/sitka_weather_07-2018_simple.csv'
 # with open(filename) as f:
     # reader = csv.reader(f)
     # header_row = next(reader)
@@ -73,7 +73,7 @@
 
 # import matplotlib.pyplot as plt
 
-# filename = 'data/sitka_weather_07-2018_simple.csv'
+# filename = 'downloading_data/data/sitka_weather_07-2018_simple.csv'
 
 # with open(filename) as f:
     # reader = csv.reader(f)
@@ -108,7 +108,7 @@
 
 # import matplotlib.pyplot as plt
 
-# filename = 'data/sitka_weather_2018_simple.csv'
+# filename = 'downloading_data/data/sitka_weather_2018_simple.csv'
 
 # with open(filename) as f:
     # reader = csv.reader(f)
@@ -143,7 +143,7 @@
 
 # import matplotlib.pyplot as plt
 
-# filename = 'data/sitka_weather_2018_simple.csv'
+# filename = 'downloading_data/data/sitka_weather_2018_simple.csv'
 
 # with open(filename) as f:
     # reader = csv.reader(f)
@@ -181,7 +181,7 @@
 
 # import matplotlib.pyplot as plt
 
-# filename = 'data/sitka_weather_2018_simple.csv'
+# filename = 'downloading_data/data/sitka_weather_2018_simple.csv'
 
 # with open(filename) as f:
     # reader = csv.reader(f)
@@ -216,7 +216,7 @@
 ###Error Checking and Error handling
 
 # import csv
-# filename = 'data/death_valley_2018_simple.csv'      ###(In this file, the high and low temperatures are at indexes 4 and 5. TOBS(at observation time) is included instead of TAVG)
+# filename = 'downloading_data/data/death_valley_2018_simple.csv'      ###(In this file, the high and low temperatures are at indexes 4 and 5. TOBS(at observation time) is included instead of TAVG)
 # with open(filename) as f:                           
     # reader = csv.reader(f)      
     # header_row = next(reader)       
@@ -229,7 +229,7 @@
 
 # import matplotlib.pyplot as plt
 
-# filename = 'data/death_valley_2018_simple.csv'     ###(To apply the above 'sitka high low' program for this file, we get an error.)
+# filename = 'downloading_data/data/death_valley_2018_simple.csv'     ###(To apply the above 'sitka high low' program for this file, we get an error.)
 
 # with open(filename) as f:
     # reader = csv.reader(f)
@@ -266,7 +266,7 @@
 
 # import matplotlib.pyplot as plt
 
-# filename = 'data/death_valley_2018_simple.csv'      ###(Exception is used to problem)
+# filename = 'downloading_data/data/death_valley_2018_simple.csv'      ###(Exception is used to problem)
 
 # with open(filename) as f:
     # reader = csv.reader(f)
@@ -306,11 +306,11 @@
 
 ###Explore the structure of the data.
 # import json
-# filename = 'data/eq_data_1_day_m1.json'
+# filename = 'downloading_data/data/eq_data_1_day_m1.json'
 # with open(filename) as f:
     # all_eq_data = json.load(f)
 
-# readable_file = 'data/readable_eq_data.json'
+# readable_file = 'downloading_data/data/readable_eq_data.json'
 # with open(readable_file, 'w') as f:
     # json.dump(all_eq_data, f, indent=4)
 
@@ -318,7 +318,7 @@
 # 
 # import json
 # 
-# filename = 'data/eq_data_1_day_m1.json'
+# filename = 'downloading_data/data/eq_data_1_day_m1.json'
 # with open(filename) as f:
     # all_eq_data = json.load(f)
 # all_eq_dicts = all_eq_data['features']
@@ -327,7 +327,7 @@
 ###Extracting magnitudes
 # import json
 
-# filename = 'data/eq_data_1_day_m1.json'
+# filename = 'downloading_data/data/eq_data_1_day_m1.json'
 # with open(filename) as f:
     # all_eq_data = json.load(f)
 # all_eq_dicts = all_eq_data['features']
@@ -341,7 +341,7 @@
 ###Extracting Location Data
 # import json
 
-# filename = 'data/eq_data_1_day_m1.json'
+# filename = 'downloading_data/data/eq_data_1_day_m1.json'
 # with open(filename) as f:
     # all_eq_data = json.load(f)
 # all_eq_dicts = all_eq_data['features']
@@ -359,13 +359,13 @@
 # print(lons[:5])
 # print(lats[:5])
 
-###Building a world map
+##Building a world map
 
 # import json
 # from plotly.graph_objs import Scattergeo, Layout
 # from plotly import offline
 
-# filename = 'data/eq_data_1_day_m1.json'
+# filename = 'downloading_data/data/eq_data_1_day_m1.json'
 # with open(filename) as f:
     # all_eq_data = json.load(f)
 # all_eq_dicts = all_eq_data['features']
@@ -379,7 +379,7 @@
     # lons.append(lon)
     # lats.append(lat)
 
-###Map earthquakes
+##Map earthquakes
 # data = [Scattergeo(lon=lons, lat=lats)]
 # layout = Layout(title='Global Earthquakes')
 
@@ -391,7 +391,7 @@
 # import json
 # from plotly.graph_objs import Scattergeo, Layout
 # from plotly import offline
-# filename = 'data/eq_data_1_day_m1.json'
+# filename = 'downloading_data/data/eq_data_1_day_m1.json'
 # with open(filename) as f:
     # all_eq_data = json.load(f)
 # all_eq_dicts = all_eq_data['features']
@@ -403,7 +403,7 @@
     # mags.append(mag)
     # lons.append(lon)
     # lats.append(lat)
-
+# 
 # data = [{
     # 'type' : 'scattergeo',
     # 'lon'  : lons,
@@ -421,7 +421,7 @@
 # import json
 # from plotly.graph_objs import Scattergeo, Layout
 # from plotly import offline
-# filename = 'data/eq_data_30_day_m1.json'
+# filename = f"downloading_data/data/eq_data_30_day_m1.json"
 # with open(filename) as f:
     # all_eq_data = json.load(f)
 # all_eq_dicts = all_eq_data['features']
@@ -455,7 +455,7 @@
 
 ###Other colorscales in plotly
 
-from plotly import colors
+# from plotly import colors
 
-for key in colors.PLOTLY_SCALES.keys():
-    print(key)
+# for key in colors.PLOTLY_SCALES.keys():
+    # print(key)
