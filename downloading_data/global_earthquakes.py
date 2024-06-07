@@ -1,10 +1,12 @@
 import json
 from plotly.graph_objs import Scattergeo, Layout
 from plotly import offline
+
 filename = f"downloading_data/data/eq_data_30_day_m1.json"
 with open(filename) as f:
     all_eq_data = json.load(f)
 all_eq_dicts = all_eq_data['features']
+
 mags, lons, lats, hover_texts = [], [], [], []
 for eq_dict in all_eq_dicts:
     mag = eq_dict['properties']['mag']
@@ -29,6 +31,7 @@ data = [{
         'colorbar' : {'title':'Magnitude'}
     }
 }]
+
 layout = Layout(title='Global Earthquakes')
 fig = {'data': data, 'layout':layout}
 offline.plot(fig, filename='downloading_data/global_earthquakes.html')
