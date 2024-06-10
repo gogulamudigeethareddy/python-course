@@ -27,5 +27,5 @@ data = [Bar(x=x_values, y=frequencies)]
 x_axis_config = {'title':'Result', 'dtick':1}       ##To label all the bars(since, plotly labels only some bars if there are more bars).
 y_axis_config = {'title':'Frequency of Result'}
 layout = Layout(title='Results of rolling two D6 1000 times', xaxis = x_axis_config, yaxis = y_axis_config)
-offline.plot({'data':data, 'layout':layout}, filename='two_d6.html')
+offline.plot({'data':data, 'layout':layout}, filename='generating_data/rolling_dice/two_d6.html')
 

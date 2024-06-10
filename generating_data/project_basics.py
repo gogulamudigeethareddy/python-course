@@ -89,7 +89,7 @@ ax.set_ylabel("Square of Value", fontsize=14)
 
 ax.axis([0, 1100, 0, 1100000])
 
-plt.savefig('squares_plot.png', bbox_inches='tight')  #To save the plots automatically and removing extra white spaces(2nd argument)
+plt.savefig('generating_data/squares_plot.png', bbox_inches='tight')  #To save the plots automatically and removing extra white spaces(2nd argument)
 
 ##Random Walk
 
