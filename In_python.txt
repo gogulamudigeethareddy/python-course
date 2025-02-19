@@ -1,0 +1,3 @@
+In Python you can learn about different data types and variables.
+In Python you can learn about functions which are defined to do specific jobs.
+In Python you can use classes and inheritance to solve real world problems.
